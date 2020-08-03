@@ -29,6 +29,7 @@ dependencies {
     implementation ('io.peacemakr:peacemakr-java-sdk:0.0.2') {
         exclude group: 'io.peacemakr', module: 'peacemakr-core-crypto'
     }
+    implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'], exclude: [])
     // implementation group: 'io.peacemakr', name: 'peacemakr-core-crypto', version: '0.0.2'
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.google.android.material:material:1.0.0'
