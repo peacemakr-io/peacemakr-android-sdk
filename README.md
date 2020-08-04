@@ -4,9 +4,9 @@
   <br>
 </p>
 
-# Peacemakr Java SDK
+# Peacemakr Android SDK
 
-This SDK provides simple, backward compatible, and secure Application Layer Cryptography with built in Key Lifecycle Management.
+This is an example of how to use Peacemakr on Android.
 
 ## Quick Start, Integrate this SDK
 
@@ -159,28 +159,6 @@ We use the usual fork and PR mechanisms, and in this section, here are some basi
 
 ## Development Environment
 
-### Dependencies:
- - Download and install openjdk: https://jdk.java.net/12/
- - Untar the download, and install it, for example on a mac: `sudo mv jdk-12.0.1.jdk /Library/Java/JavaVirtualMachines/`
- - `export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home` to your `~/.bash_profile`
- - Install IntelliJ CE
+For the SDK, please see https://github.com/peacemakr-io/peacemakr-java-sdk.
 
-### How to build:
-- `aws ecr get-login --no-include-email --region us-east-2 --profile peacemakr` || true
-- `docker-compose up` (just let this run in a separate window while building, integration tests depend on it locally)
-- `./build.sh`
-
-### How to release version x.y.z:
-- Delete your folder `./build` to ensure a fresh build of all artifacts.
-- Build everything (see above).  Make sure it completes successfully before proceeding.
-- Update all refernces to previous version, to new version. (use `git grep 0.0.1` for example)
-- Commit version updates.
-- `git tag vx.y.z`
-- `git push origin vx.y.z`
-- Login to github. Browse to the project's release section.  Manually upload the 2 jars (CoreCrypto jar and SDK jar's) built from released tag. Update release notes on build release 
-
-### How to release to maven central
-- 'vi ~/.gradle/gradle.properties'
-- fill in all secrets in the local gradle.properties (for 'signing.keyId' provide last 8 chars of the signing key)
-- set you gradle build to use local gradle.properties 'export GRADLE_USER_HOME=(echo ~/.gradle)'
-- ./gradlew uploadArchives
+For the example android app, please see example-android.
