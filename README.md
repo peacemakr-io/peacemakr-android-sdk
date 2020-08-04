@@ -11,8 +11,16 @@ This is an example of how to use Peacemakr on Android.
 ## Quick Start, Integrate this SDK
 
 - Navigate to the latest release.
-- Download the `jar`'s from the release tab.
-- Include the jar's in your project's `CLASSPATH`
+- Download the `aar`'s from the release tab.
+- Include the aar's in your project's `CLASSPATH`
+- Update your build to pull in the java-sdk, but without the unix native core crypto
+   - For example,
+   ```java
+   implementation fileTree(dir: "libs", include: ["PeacemakrCoreCrypto-0.0.2.aar"])
+    implementation ('io.peacemakr:peacemakr-java-sdk:0.0.2') {
+        exclude group: 'io.peacemakr', module: 'peacemakr-core-crypto'
+    }
+    ```
 - Obtain your APIKey, using your admin poral (https://admin.peacemakr.io).
 - Construct a new instance of the Peacemakr Java SDK, using your APIKey,
    - `ICrypto peacemakrSDK = Factory.getCryptoSDK(myAPIKey, "my client name", null, new FilePersister("~/.peacemakr"), null);`
