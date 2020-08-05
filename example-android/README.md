@@ -9,6 +9,6 @@ Quick example on how to use Peacemakr in an Android App.
  * Open SecondFragment.java and update your API key
  * And provision an Android device, and on that Android device, run "app"
 
-### Caution
+### Production Recommendations
 
  * Not recommended to use main thread (responsible for GUI rendering) for actual Encryption or Decryption operations, as the first call may result in network activity to fetch required keys.
