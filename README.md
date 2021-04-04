@@ -1,12 +1,16 @@
 <p align="center">
   <br>
-    <img src="https://admin.peacemakr.io/images/PeacemakrP-Golden.png" width="150"/>
+    <img src="https://admin.peacemakr.io/p_logo.png" width="150"/>
   <br>
 </p>
 
-# Peacemakr Android SDK
+# Peacemakr E2E-Encryption-as-a-Service Android SDK
 
-This is an example of how to use Peacemakr on Android.
+Peacemakr's E2E-Encryption-as-a-Service SDK simplify your data security with E2E-Encryption service and automated key lifecycle management.
+
+You can easily encrypt your data without worrying about backward compatibility, cross platform portability, or changing security requirements.
+
+Our Zero-Trust capability allows you to customize your security strength to meet the highest standard without having to place your trust in Peacemakr as we don’t have the capacity to get your keys and decrypt your data.
 
 ## Quick Start, Integrate this SDK
 
