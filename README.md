@@ -166,9 +166,20 @@ public interface ICrypto {
 }
 ```
 
-## Contributions
 
-Peacemakr welcomes open and active contributions to this SDK. As long as they're in the spirit of project, we will most likely accept them. However, you may want to get our opinion on proposed changes before investing time, so we can work together to solve problems you encounter that make sense for the future direction we have planned.
+## Contributing
+We appreciate all contributions. Some basic guidelines are here, for more informaton
+see CONTRIBUTING.md
+
+Issues:
+- Please include a minimal example that reproduces your issue
+- Please use the tags to help us help you
+- If you file an issue and you want to work on it, fantastic! Please assign it to yourself.
+
+PRs:
+- All PRs must be reviewed and pass CI
+- New functionality must include new tests
+
 
 ## Testing
 
